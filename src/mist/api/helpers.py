@@ -529,9 +529,9 @@ def check_host(host, allow_localhost=config.ALLOW_CONNECT_LOCALHOST,
         raise MistError(msg + " is not a valid IPv4 address.")
 
     forbidden_subnets = {
-        '100.64.0.0/10': ("used for communications between a service provider "
-                          "and its subscribers when using a "
-                          "Carrier-grade NAT"),
+        # '100.64.0.0/10': ("used for communications between a service provider "
+        #                   "and its subscribers when using a "
+        #                   "Carrier-grade NAT"),
         '169.254.0.0/16': ("used for link-local addresses between two hosts "
                            "on a single link when no IP address is otherwise "
                            "specified"),
